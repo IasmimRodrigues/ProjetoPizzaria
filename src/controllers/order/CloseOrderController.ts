@@ -3,7 +3,7 @@ import { CloseOrderService } from "../../services/order/CloseOrderService";
 
 class CloseOrderController {
     async handle(req: Request, res: Response) {
-        const { order_id } = req.body; // Supondo que o ID do pedido seja passado como parâmetro na URL
+        const { order_id } = req.body; 
         const closeOrderService = new CloseOrderService();
         
         try {
